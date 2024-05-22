@@ -1,0 +1,231 @@
+@use './mixins' as *;
+
+.opacity {
+    position: absolute;
+    background: linear-gradient(119.36deg, rgba(10, 14, 63, 0.45) 13.83%, rgba(107, 72, 255, 0.45) 85.83%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.login {
+    background-image: linear-gradient(90deg,
+        transparent 0% ,
+        transparent 35%,
+        white 35% 
+    ),
+    url('../assets/images/analog-landscape-city-with-buildings.png');
+    height: 600px;
+    width: 700px;
+    @include imageProp(center, cover, no-repeat);
+    border-radius: 12px;
+    box-shadow: 0 0 3px 1px #363434;
+    position: absolute;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    .pop-login {
+        position: absolute;
+        right: 0;
+        width: 455px;
+        border-radius: 6px;
+        z-index: 3;
+        height: 600px !important;
+        form {
+        h1 {
+            text-align: center;
+            font-family: "Noor";
+        }
+        .input-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            label {
+                transform: translate(99px, 20px);
+                background-color: white;
+                padding: 12px;
+                color: #000000;
+            }
+            label.pass {
+                transform: translate(116px, 20px);
+            }
+            input {
+                width: 350px;
+                padding: 15px 10px;
+                outline: none;
+                border-radius: 10px;
+                border: .3px solid;
+            }
+        }
+        button {
+            width: 350px;
+            padding: 15px 10px;
+            outline: none;
+            border-radius: 10px;
+            border: .3px solid;
+            @include transformTranslate(absolute, -50%, -50%, 50%);
+            background-color: #1EE3CF;
+            color: #0A0E3F;
+            font-size: 20px
+        }
+    
+    .section-acount {
+        @include transformTranslate(absolute,-50%, -50%, 70%);
+        width: 90%;
+        margin: auto;
+        display: flex;
+        font-size: 16px;
+        a.pass {
+            margin-left: 30px;
+        }
+    
+    }
+    .social-login{
+        position: absolute;
+        bottom: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        div {
+            display: flex;
+            align-items: center;
+            border-radius: 21px;
+            padding: 31.5px 20px 31.5px 20px;
+            padding: 5px 15px;
+            box-shadow: 0 0 2px 1px #b9b5c9;
+            span {
+                margin-left: 4px;
+            }
+            &:nth-child(1) {
+                background-color: white;
+            }
+            &:nth-child(2) {
+                background-color: black;
+                color: white;
+            }
+            &:nth-child(3) {
+                background-color: #1877F2;
+                color: white;
+            }
+        }
+   
+    }
+    
+ } 
+}
+}
+
+// responsive login
+@media (max-width: 575px) {
+    .login {
+        height: 475px;
+        width: 80%;
+        .pop-login {
+            height: 100% !important;
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            width: 100%;
+            form {
+            .input-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 20px 0 0;
+                label {
+                    transform: translate(55px, 20px);
+                }
+                label.pass {
+                    transform: translate(85px, 20px);
+                }
+                input {
+                    width: 90%;
+                    padding: 13px;
+                }
+            }
+            button {
+                width: 70%;
+                padding: 10px;
+                margin-top: 20px;
+                padding: 8px;
+            }
+            
+            .section-acount {
+                align-items: baseline;
+                justify-content: center;
+                span,a {
+                    font-size: 10px;
+           }
+            a.pass {
+                margin-left: 30px;
+            }
+        }
+        .social-login{
+            justify-content: center;
+          div {
+            padding: 3px 9px;
+            span {
+                font-size: 12px;
+            }
+            img {
+                width: 20px !important;
+            }
+          }
+        }
+        }    
+     } 
+    }
+    }
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .login {
+        height: 517px;
+        width: 454px;
+        .pop-login {
+            height: 100% !important;
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            form {
+            .input-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 20px 0 0;
+                label {
+                    transform: translate(69px, 20px);
+                }
+                label.pass {
+                    transform: translate(100px, 20px);
+                }
+            }
+            button {
+                width: 247px;
+                padding: 10px;
+                margin-top: 20px;
+            }
+        .section-acount {
+            align-items: baseline;
+            justify-content: center;
+            span,a {
+                font-size: 13px;
+            }
+            a.pass {
+            }
+        }
+        .social-login{
+            div {
+                img {
+                    width: 30px;
+                }
+            }
+        }
+     } 
+    }
+}
+}
+
+

@@ -1,0 +1,16 @@
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin transformTranslate($pos, $x, $y,$top) {
+    position: $pos;
+    transform: translate($x, $y);
+    left: 50%;
+    top: $top;
+}
+@mixin imageProp($position, $size, $repeat) {
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+}

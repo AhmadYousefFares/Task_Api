@@ -1,0 +1,211 @@
+.opacity {
+  position: absolute;
+  background: linear-gradient(119.36deg, rgba(10, 14, 63, 0.45) 13.83%, rgba(107, 72, 255, 0.45) 85.83%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.login {
+  background-image: linear-gradient(90deg, transparent 0%, transparent 35%, white 35%), url("../assets/images/analog-landscape-city-with-buildings.png");
+  height: 600px;
+  width: 700px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 0 3px 1px #363434;
+  position: absolute;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.login .pop-login {
+  position: absolute;
+  right: 0;
+  width: 455px;
+  border-radius: 6px;
+  z-index: 3;
+  height: 600px !important;
+}
+.login .pop-login form h1 {
+  text-align: center;
+  font-family: "Noor";
+}
+.login .pop-login form .input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .pop-login form .input-form label {
+  transform: translate(99px, 20px);
+  background-color: white;
+  padding: 12px;
+  color: #000000;
+}
+.login .pop-login form .input-form label.pass {
+  transform: translate(116px, 20px);
+}
+.login .pop-login form .input-form input {
+  width: 350px;
+  padding: 15px 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 0.3px solid;
+}
+.login .pop-login form button {
+  width: 350px;
+  padding: 15px 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 0.3px solid;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: #1EE3CF;
+  color: #0A0E3F;
+  font-size: 20px;
+}
+.login .pop-login form .section-acount {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 70%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  font-size: 16px;
+}
+.login .pop-login form .section-acount a.pass {
+  margin-left: 30px;
+}
+.login .pop-login form .social-login {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.login .pop-login form .social-login div {
+  display: flex;
+  align-items: center;
+  border-radius: 21px;
+  padding: 31.5px 20px 31.5px 20px;
+  padding: 5px 15px;
+  box-shadow: 0 0 2px 1px #b9b5c9;
+}
+.login .pop-login form .social-login div span {
+  margin-left: 4px;
+}
+.login .pop-login form .social-login div:nth-child(1) {
+  background-color: white;
+}
+.login .pop-login form .social-login div:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+.login .pop-login form .social-login div:nth-child(3) {
+  background-color: #1877F2;
+  color: white;
+}
+
+@media (max-width: 575px) {
+  .login {
+    height: 475px;
+    width: 80%;
+  }
+  .login .pop-login {
+    height: 100% !important;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+  }
+  .login .pop-login form .input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 0;
+  }
+  .login .pop-login form .input-form label {
+    transform: translate(55px, 20px);
+  }
+  .login .pop-login form .input-form label.pass {
+    transform: translate(85px, 20px);
+  }
+  .login .pop-login form .input-form input {
+    width: 90%;
+    padding: 13px;
+  }
+  .login .pop-login form button {
+    width: 70%;
+    padding: 10px;
+    margin-top: 20px;
+    padding: 8px;
+  }
+  .login .pop-login form .section-acount {
+    align-items: baseline;
+    justify-content: center;
+  }
+  .login .pop-login form .section-acount span, .login .pop-login form .section-acount a {
+    font-size: 10px;
+  }
+  .login .pop-login form .section-acount a.pass {
+    margin-left: 30px;
+  }
+  .login .pop-login form .social-login {
+    justify-content: center;
+  }
+  .login .pop-login form .social-login div {
+    padding: 3px 9px;
+  }
+  .login .pop-login form .social-login div span {
+    font-size: 12px;
+  }
+  .login .pop-login form .social-login div img {
+    width: 20px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .login {
+    height: 517px;
+    width: 454px;
+  }
+  .login .pop-login {
+    height: 100% !important;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .login .pop-login form .input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 0;
+  }
+  .login .pop-login form .input-form label {
+    transform: translate(69px, 20px);
+  }
+  .login .pop-login form .input-form label.pass {
+    transform: translate(100px, 20px);
+  }
+  .login .pop-login form button {
+    width: 247px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .login .pop-login form .section-acount {
+    align-items: baseline;
+    justify-content: center;
+  }
+  .login .pop-login form .section-acount span, .login .pop-login form .section-acount a {
+    font-size: 13px;
+  }
+  .login .pop-login form .social-login div img {
+    width: 30px;
+  }
+}/*# sourceMappingURL=login.css.map */

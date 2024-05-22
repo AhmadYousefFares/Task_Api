@@ -1,0 +1,75 @@
+.logout {
+  height: 100vh;
+  background: linear-gradient(119.36deg, rgba(10, 14, 63, 0.45) 13.83%, rgba(107, 72, 255, 0.45) 85.83%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.logout .logout-pop {
+  background-image: url("../assets/images/analog-landscape-city-with-buildings.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 280px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.logout .logout-pop .pop-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  border-radius: 10px;
+}
+.logout .logout-pop .pop-info p {
+  color: #0A0E3F;
+  font-size: 24px;
+}
+.logout .logout-pop .pop-info button.ok {
+  width: 350px;
+  border: none;
+  padding: 12px 10px;
+  outline: none;
+  border-radius: 21px;
+  background-color: #1EE3CF;
+  color: #0A0E3F;
+  font-size: 19px;
+}
+.logout .logout-pop .pop-info button.cancel {
+  font-size: 18px;
+  width: 350px;
+  padding: 11px 10px;
+  outline: none;
+  border: 1px #D9D9D9 solid;
+  border-radius: 21px;
+}
+
+@media (max-width: 575px) {
+  .logout .logout-pop .pop-info {
+    width: 100%;
+  }
+  .logout .logout-pop .pop-info p {
+    color: #0A0E3F;
+    font-size: 12px;
+  }
+  .logout .logout-pop .pop-info a {
+    width: 80%;
+  }
+  .logout .logout-pop .pop-info a button.ok {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .logout .logout-pop .pop-info a button.cancel {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=logout.css.map */

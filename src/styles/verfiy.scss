@@ -1,0 +1,136 @@
+.verfiy {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161D6F;
+    .verfiy-bg {
+        width: 55%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url('../assets/images/amazing-aerial-shot-singapore-cityscape-with-lots-skyscrapers\ \(1\).png');
+    .verfiy-content {
+        padding: 25px;
+        height: 450px;
+        width: 450px;
+        border-radius: 20px;
+        background-color: white;
+        h2 {
+            text-align: center;
+            direction: rtl;
+            color: #0A0E3F;
+            span {
+                color: #6B48FF;
+            }
+        }
+        .email-sended {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 12px 0;
+            font-size: 18px;
+            p {
+                direction: rtl;
+            }
+            span {
+               color: #6B48FF;
+            }
+        }
+        .inputs {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            input {
+                padding: 10px;
+                width: 40px;
+                border-radius: 10px;
+                outline: none;
+                border: 1px solid#ACACAC;
+                font-weight: bold;
+            }
+        }
+    }
+    button {
+        width: 80%;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 21px;
+        background-color: #1EE3CF;
+        outline: none;
+        box-shadow: 0px 38.49px 71.48px 0px #00000012;
+        border: none;
+        margin: 40px;
+        cursor: pointer;
+        transition: .3s;
+        border: 1px solid #1EE3CF;
+        &:hover {
+            background-color: white;
+            color: #032a97;
+        }
+    }
+    p {
+        text-align: center;
+        span {
+            color: #1EE3CF;
+        }
+    }
+    button.confirm {
+        width: 80%;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 21px;
+        outline: none;
+        box-shadow: 0px 38.49px 71.48px 0px #00000012;
+        border: .3px solid #ACACAC;
+        margin: 40px;
+        background-color: white;
+        &:hover {
+            background-color: #08ffe6ad;
+            color: black;
+        }
+    }
+}}
+@media (max-width: 475px) {
+    .verfiy {
+        .verfiy-bg {
+            margin-left: 100px;
+        .verfiy-content {
+            padding: 23px;
+            height: 433px;
+            width: 329px;
+            h2 {
+                text-align: center;
+                span {
+                    color: #6B48FF;
+                }
+            }
+            .email-sended {
+                font-size: 13px;
+                justify-content: space-between;
+                font-size: 12px;
+                flex-direction: column-reverse;
+            }
+        }
+        .inputs {
+            input {
+                margin: 1px;
+            }
+        }
+        button.confirm {
+            margin: 20px 0 0 22px;
+        }
+    }
+}
+
+}
+@media (min-width: 476px) and (max-width: 667px) {
+    .verfiy .verfiy-bg .verfiy-content .email-sended {
+        flex-direction: column-reverse;
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,421 @@
+@use '../styles/mixins' as *;
+
+.register {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0 0 3px 1px #aaa;
+    margin: auto;
+    border-radius: 12px;
+    background-image: url('../assets/images/amazing-aerial-shot-singapore-cityscape-with-lots-skyscrapers\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 71px;
+    height: 86vh;
+    left: 10%;
+    .register-content {
+        background-color: white;
+        padding: 10px;
+        border-radius: 12px;
+        width: 80%;
+        height: 86vh;
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .register-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            flex: .5;
+            height: 40vh;
+            .register-inputs {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 50%;
+                .inputs {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 85%;
+                    position: relative;
+                    label {
+                        position: absolute;
+                        top: -10px;
+                        right: 10px;
+                        background-color: white;
+                        padding: 0 20px;
+                    }
+                    input {
+                        width: 100%;
+                        padding: 4% 3%;
+                        border-radius: 16px;
+                        outline: none;
+                        border: .3px solid #aaa;
+                    }
+                }
+            }
+            .register-images {
+                width: 50%;
+                height: 100%;
+                .select-file {
+                    position: relative;
+                    margin-bottom: 20px;
+                    font-size: .9rem;
+                    img {
+                        width: 87%;
+                    }
+                    span {
+                        position: absolute;
+                        top: -16.5px;
+                        right: 64px;
+                    }
+                    div {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        top: 50%;
+                        justify-content: flex-start;
+                        width: 100%;
+                        img {
+                            width: 40px;
+                            margin: 3px;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            button {
+                width: 80%;
+                padding: 12px 10px;
+                outline: none;
+                border-radius: 10px;
+                border: .3px solid #aaa;
+                background-color: #1EE3CF;
+                color: #0A0E3F;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            p.log{
+                margin: 10px;
+                text-align: right;
+                width: 413px;                span {
+                    color: #0A0E3F;
+                }
+            }
+        }
+        span.or {
+            position: relative;
+            top: 24%;
+            left: 50%;
+            background-color: white;
+            margin: 10px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 1px;
+                background-color: #aaa;
+                left: -135px;
+                top: 10px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 1px;
+                left: 17px;
+                top: 10px;
+                background-color: #aaa;
+            }
+        }
+        .social-login{
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 55%;
+            bottom: 39px !important;
+            right: 90px;
+            div {
+                display: flex;
+                align-items: center;
+                border-radius: 21px;
+                padding: 31.5px 20px 31.5px 20px;
+                padding: 5px 15px;
+                box-shadow: 0 0 2px 1px #b9b5c9;
+                span {
+                    margin-left: 4px;
+                }
+                &:nth-child(1) {
+                    background-color: white;
+                }
+                &:nth-child(2) {
+                    background-color: black;
+                    color: white;
+                }
+                &:nth-child(3) {
+                    background-color: #1877F2;
+                    color: white;
+                }
+            }
+       
+        }
+    }
+}
+@media(max-width: 575px) {
+   
+    .register {
+        height: 86vh;
+        .register-content {
+            width: 100%;
+            height: 86vh;
+            .register-info {
+                height: 52vh;
+                flex-direction: column;     
+                .register-inputs {
+                    width: 350px;
+                    .inputs {
+                        margin-bottom: 10px;
+                        label {
+                            font-size: 10px;
+                        }
+                        input {
+                            width: 270px;
+                            padding: 3px;
+                        }
+                    }
+                }
+                .register-images {
+                    .select-file {
+                        span {
+                            font-size: 10px;
+                            top: -7.5px;
+                            right: 1px;
+                        }
+                        img {
+                            width: 98%;
+                        }
+                        div {
+                            img {
+                                width: 20px;
+                                p {
+                                font-size: 10px !important;
+                            }
+                        }
+                    }
+                }
+                button {
+                    padding: 4px;
+                    font-size: 16px;
+                }
+                p.log{
+                    margin: 10px;
+                    text-align: right;
+                    width: 194px;
+                    font-size: 10px;               
+                }
+            }
+        }
+        span.or {
+        top: 33px;
+        font-size: 10px;
+        &::after,&::before {
+            width: 100px;
+        }
+        &::before {
+            left: -110px;
+        }
+        }
+        .social-login{
+            width: 64%;
+            div {
+                img {
+                    width: 12px !important;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+       
+        }
+    }
+}
+.register .register-content .register-info .register-images .select-file div p {
+    font-size: 10px;
+    
+}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .register {
+        .register-content {
+            width: 100%;
+            height: 86vh;
+            span.or {
+                top: 61px;
+            }
+            .social-login {
+                bottom: 280px;
+                width: 75%;
+                img {
+                    width: 20px;
+                }
+            }
+            .register-info {
+                .register-images {
+                      .select-file {
+                        img {
+                            width: 100%;
+                        }
+                        div {
+                            img {
+                                width: 25px;
+                                margin: 3px;
+                            }
+                            p {
+                                width: 200px;
+                            }
+                        }
+                    }
+                      }
+                }
+                p.log{
+                    width: 198px !important;                
+                }
+            }
+    }
+}
+@media (min-width: 668px) and (max-width: 991px) {
+    .register {
+        height: 80vh;
+        .register-content {
+            height: 80vh;
+            width: 100%;
+            .register-info {
+                .register-images {
+                    .select-file {
+                        img {
+                            width: 99%;
+                        }
+                        span {
+                           right: 0;
+                        }
+                        div {
+                           img {
+                                width: 40px;
+                                margin: 3px;
+                            }
+                            p {
+                                font-size: 10px;
+                                text-align: center ;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+                button {
+                    width: 80%;
+                    padding: 6px 10px;
+                    font-size: 19px;
+                }
+                p.log{
+                    font-size: 12px;
+                    width: 216px !important;                
+                    span {
+                        color: #0A0E3F;
+                    }
+                }
+            }
+            span.or {
+              top: 14%;
+              font-size: 12px;
+            }
+            .social-login{
+                bottom: 161px;
+                width: 75%;
+                font-size: 12px;
+                div img {
+                    bottom: 161px;
+                    width: 75%;
+                    width: 15px;   
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1999px) {
+    .register {
+        .register-content {
+            .register-info {
+                flex: .5;
+                .register-inputs {
+                    width: 50%;
+                    .inputs {
+                        width: 85%;
+                        label {
+                            top: -10px;
+                            right: 10px;
+                        }
+                        input {
+                            padding: 4% 3%;
+                        }
+                    }
+                }
+                .register-images {
+                    .select-file {
+                        position: relative;
+                        margin-bottom: 20px;
+                        font-size: .9rem;
+                        img {
+                            width: 94%;
+                        }
+                        span {
+                            position: absolute;
+                            top: -16.5px;
+                            right: 64px;
+                        }
+                        div {
+                            img {
+                                width: 30px;
+                                margin: 3px;
+                            }
+                            p {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+                button {
+                    width: 80%;
+                    padding: 12px 10px;
+                    font-size: 20px;
+                }
+                p.log{
+                    margin: 10px;
+                    text-align: right;
+                    width: 235px;                
+                    span {
+                        color: #0A0E3F;
+                    }
+                }
+            }
+            span.or {
+                top: 15%;
+            }
+            .social-login{
+                bottom: 160px;
+            }
+        }
+    }
+}
