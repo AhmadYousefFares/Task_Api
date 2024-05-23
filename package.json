@@ -1,7 +1,7 @@
 {
   "name": "traning-task",
+  "homepage": "https://AhmadMostafaHamdo.github.io/reacttrain",
   "version": "0.1.0",
-  "homepage": "https://AhmadMostafaHamdo.github.io/Ahmad_Hamdo_Task2",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"  
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1",
     "sass-loader": "^14.2.1"
   }
