@@ -1,9 +1,9 @@
 {
   "name": "traning-task",
-  "homepage": "https://AhmadMostafaHamdo.github.io/reacttrain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "homepage": "https://AhmadMostafaHamdo.github.io/reacttrain",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
@@ -24,10 +24,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"  
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
