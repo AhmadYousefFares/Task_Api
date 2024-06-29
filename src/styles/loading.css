@@ -1,0 +1,26 @@
+.loading {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.486);
+    width: 100vw;
+    z-index: 10;
+}
+.loading .loading-content {
+    width: 75px;
+    height: 75px;background-color: transparent;
+    border: 5px solid;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: loading 1.5s infinite linear;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

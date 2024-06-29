@@ -58,7 +58,7 @@
        width: 100%;
         p {
             color: #0A0E3F;
-            font-size: 12px;
+            font-size: 14px;
         }
         a {
         width: 80%;
@@ -76,4 +76,28 @@
        }
     }
 }  
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .logout {
+        .logout-pop {
+           .pop-info {
+           width: 100%;
+            p {
+                color: #0A0E3F;
+            }
+            a {
+            width: fit-content;
+            button.ok {
+                width: 290px;
+                padding: 9px 10px;
+                font-size: 14px;
+            }
+            button.cancel {
+                width: 290px;
+                padding: 9px 10px;
+            }
+            }
+           }
+        }
+    }  
 }

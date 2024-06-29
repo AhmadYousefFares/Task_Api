@@ -37,9 +37,11 @@
   justify-content: center;
   margin: 12px 0;
   font-size: 18px;
+  flex-direction: column-reverse;
 }
 .verfiy .verfiy-bg .verfiy-content .email-sended p {
   direction: rtl;
+  margin-bottom: 10px;
 }
 .verfiy .verfiy-bg .verfiy-content .email-sended span {
   color: #6B48FF;
@@ -116,7 +118,6 @@
     font-size: 13px;
     justify-content: space-between;
     font-size: 12px;
-    flex-direction: column-reverse;
   }
   .verfiy .verfiy-bg .inputs input {
     margin: 1px;

@@ -4,11 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons/faBars'
 import { faXmark} from '@fortawesome/free-solid-svg-icons/faXmark'
 import { useRef, useState } from 'react';
+import axios from 'axios'
+import Cookie from "cookie-universal"
+
 export default function Init() {
+    let cookieAccessToken = Cookie();
     const [ulBlock, setUlBolck] = useState(true);
     const ul = useRef();
     const iconMenu = useRef();
-    const iconClose = useRef();
+    const iconClose = useRef(); 
     const btnAuth = useRef();
     function handelUl () {
         setUlBolck(e=>!e);
@@ -29,14 +33,17 @@ export default function Init() {
             window.location.pathname = '/login'
         }
     }
-   
     return (
         <div className="init">
             <div className="header">
                 <div className='header-auth'>
                     <ul>
                         <li><Link to="" className='start' >ابدأ</Link></li>
-                        <li><Link className='enter' onClick={logout} ref={btnAuth}> {window.localStorage.getItem('btnAuth')}</Link></li>
+                        <li><Link className='enter' onClick={logout} ref={btnAuth}> {
+                        window.localStorage.getItem('btnAuth')
+                        ? window.localStorage.getItem('btnAuth')
+                        :"تسجيل الدخول"
+                        }</Link></li>
                     </ul>
                 </div>
                 <div className='header-content'>

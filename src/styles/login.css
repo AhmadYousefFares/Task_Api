@@ -8,8 +8,10 @@
 }
 
 .login {
+  position: fixed !important;
+  transition: 0.5s;
   background-image: linear-gradient(90deg, transparent 0%, transparent 35%, white 35%), url("../assets/images/analog-landscape-city-with-buildings.png");
-  height: 600px;
+  height: 583px;
   width: 700px;
   background-position: center;
   background-size: cover;
@@ -19,7 +21,7 @@
   position: absolute;
   z-index: 4;
   transform: translate(-50%, -50%);
-  left: 50%;
+  left: -50%;
   top: 50%;
 }
 .login .pop-login {
@@ -28,7 +30,7 @@
   width: 455px;
   border-radius: 6px;
   z-index: 3;
-  height: 600px !important;
+  height: 100% !important;
 }
 .login .pop-login form h1 {
   text-align: center;
@@ -38,11 +40,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 75px;
 }
 .login .pop-login form .input-form label {
-  transform: translate(99px, 20px);
+  transform: translate(99px, 10px);
   background-color: white;
-  padding: 12px;
+  padding: 6px;
   color: #000000;
 }
 .login .pop-login form .input-form label.pass {
@@ -64,10 +67,27 @@
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 58%;
   background-color: #1EE3CF;
   color: #0A0E3F;
   font-size: 20px;
+}
+.login .pop-login form p {
+  position: absolute;
+  bottom: 17px;
+  left: 10%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 12px 1px;
+  border-radius: 12px;
+  padding: 7px;
+}
+.login .pop-login form .error {
+  color: red;
+}
+.login .pop-login form .success {
+  color: green;
 }
 .login .pop-login form .section-acount {
   position: absolute;
@@ -113,6 +133,14 @@
   color: white;
 }
 
+.login-anmation {
+  left: 50%;
+}
+
+.login-anmation2 {
+  left: 150%;
+}
+
 @media (max-width: 575px) {
   .login {
     height: 475px;
@@ -130,6 +158,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 20px 0 0;
+    height: 60px;
   }
   .login .pop-login form .input-form label {
     transform: translate(55px, 20px);
@@ -186,6 +215,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 20px 0 0;
+    height: 60px;
   }
   .login .pop-login form .input-form label {
     transform: translate(69px, 20px);

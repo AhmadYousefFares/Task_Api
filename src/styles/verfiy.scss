@@ -34,8 +34,10 @@
             justify-content: center;
             margin: 12px 0;
             font-size: 18px;
-            p {
+            flex-direction: column-reverse;
+            p { 
                 direction: rtl;
+                margin-bottom: 10px;
             }
             span {
                color: #6B48FF;
@@ -113,7 +115,6 @@
                 font-size: 13px;
                 justify-content: space-between;
                 font-size: 12px;
-                flex-direction: column-reverse;
             }
         }
         .inputs {

@@ -57,7 +57,7 @@
   }
   .logout .logout-pop .pop-info p {
     color: #0A0E3F;
-    font-size: 12px;
+    font-size: 14px;
   }
   .logout .logout-pop .pop-info a {
     width: 80%;
@@ -71,5 +71,26 @@
     width: 100%;
     padding: 10px 10px;
     font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .logout .logout-pop .pop-info {
+    width: 100%;
+  }
+  .logout .logout-pop .pop-info p {
+    color: #0A0E3F;
+  }
+  .logout .logout-pop .pop-info a {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .logout .logout-pop .pop-info a button.ok {
+    width: 290px;
+    padding: 9px 10px;
+    font-size: 14px;
+  }
+  .logout .logout-pop .pop-info a button.cancel {
+    width: 290px;
+    padding: 9px 10px;
   }
 }/*# sourceMappingURL=logout.css.map */
